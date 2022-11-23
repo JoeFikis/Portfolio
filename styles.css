@@ -1,0 +1,131 @@
+* {
+    text-decoration: none;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background {
+    display: inline-flex;
+    position: static;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.background img {
+    position: static;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    position: absolute;
+    text-decoration: beige;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    top: 0px;
+    justify-content: center;
+}
+
+.header h1 {
+    font-family: 'Poppins', sans-serif;
+    z-index: 0;
+    font-weight: bolder;
+    color: green;
+    text-rendering: optimizeLegibility;
+}
+
+.Navbar {
+    position: fixed;
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 30rem;
+    align-items: center;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+}
+
+.Navbar ul {
+    list-style-type: none;
+    margin: 0;
+    color: blue;
+}
+
+.Navbar li {
+    list-style: none;
+    display: inline-flex;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1rem;
+    color: blue;
+}
+
+
+.content {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    flex-direction: column;
+    width: 50rem;
+    height: 30rem;
+    margin-top: 20rem;
+    flex-direction: column;
+    border: 1rem solid ;
+    background-color: black;
+}
+
+.content h1 , h2 {
+    position: relative;
+    color: white;
+    font-family: 'sans-serif';
+    text-rendering: auto;
+text-rendering: optimizeSpeed;
+text-rendering: optimizeLegibility;
+}
+
+.content h1 {
+    font-size: 3rem;
+    font-family: 'Roboto Mono', monospace;
+    text-rendering: optimizeLegibility;
+
+}
+
+.content h2 {
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    text-rendering: optimizeLegibility;
+
+}
+
+.Profile-pic {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.Profile-pic img {
+    margin-top: 5rem;
+    cursor: pointer;
+    justify-content: center;
+    position: relative;
+    justify-self: center;
+    width: 200px;
+    height: 200px;
+    transition: width 1s, height 1s, transform 1s;
+}
+
+.Profile-pic img:hover {
+    background-color: #ffcccc;
+  width: 250px;
+  height: 250px;
+
+}
