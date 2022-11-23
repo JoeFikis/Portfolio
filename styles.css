@@ -42,31 +42,44 @@
 }
 
 .Navbar {
-    position: fixed;
+    position: absolute;
     flex-direction: column;
     display: flex;
-    margin-bottom: 30rem;
+    margin-bottom: 16.5rem;
     align-items: center;
     z-index: 1;
-    background-color: white;
+    background-color: transparent;
     width: 100%;
     justify-content: center;
 }
 
 .Navbar ul {
-    list-style-type: none;
-    margin: 0;
-    color: blue;
+    flex: 1;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    height: 1rem;
 }
 
-.Navbar li {
-    list-style: none;
-    display: inline-flex;
-    font-size: 30px;
-    text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 1rem;
-    color: blue;
+.Navbar a {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 2rem;
+  height: 320px;
+  width: 20rem;
+  text-decoration: none;
+  margin: 1rem;
+  transition: all 0.5s ease-out;
+}
+
+ .Navbar a:hover,
+ .Navbar a:focus {
+  background-color: #fff;
+  color: #333;
 }
 
 
@@ -113,7 +126,7 @@ text-rendering: optimizeLegibility;
 }
 
 .Profile-pic img {
-    margin-top: 5rem;
+    margin-top: 3rem;
     cursor: pointer;
     justify-content: center;
     position: relative;
@@ -123,9 +136,29 @@ text-rendering: optimizeLegibility;
     transition: width 1s, height 1s, transform 1s;
 }
 
+.links {
+    display: flex; 
+    justify-content: center;
+    position: relative;
+    margin-bottom: 0rem;
+    text-decoration: none;
+}
+
+.links button {
+    font-size: 60px;
+    height: 100px;
+    width: 100x;
+    text-decoration: none;
+    color: black;
+}
+
+.links i {
+    text-decoration: none;
+    color: black;
+}
+
 .Profile-pic img:hover {
     background-color: #ffcccc;
   width: 250px;
   height: 250px;
-
 }
