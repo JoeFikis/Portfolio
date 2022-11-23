@@ -142,6 +142,7 @@ text-rendering: optimizeLegibility;
     position: relative;
     margin-bottom: 0rem;
     text-decoration: none;
+    background-color: black;
 }
 
 .links button {
@@ -149,19 +150,18 @@ text-rendering: optimizeLegibility;
     height: 100px;
     width: 100x;
     text-decoration: none;
-    color: black;
+    background-color: black;
     transition: width 1s, height 1s, transform 1s;
 }
 
 .links i {
     text-decoration: none;
-    color: black;
-    transition: width 2s, height 1s, transform 1s;
+    color: white;
+    transition: height 1s, transform 1s;
 }
 
 .links button:hover {
-    background-color: #ffcccc;
-  width: 120px;
+    background-color: black;
   height: 120px;
 }
 

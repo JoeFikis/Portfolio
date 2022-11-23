@@ -1,0 +1,14 @@
+* {
+    background-color: rgb(44, 43, 43);
+}
+
+.back {
+    width: 300px;
+    height: 300px;
+}
+
+.back i {
+    text-decoration: none;
+    color: black;
+    font-size: 100px;
+}
