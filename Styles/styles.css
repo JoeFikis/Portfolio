@@ -45,7 +45,7 @@
     position: absolute;
     flex-direction: column;
     display: flex;
-    margin-bottom: 16.5rem;
+    margin-bottom: 17rem;
     align-items: center;
     z-index: 1;
     background-color: transparent;
@@ -60,11 +60,13 @@
     text-decoration: none;
     transition: all 0.5s ease-out;
     height: 1rem;
+    border: none;
 }
 
 .Navbar a {
   background-color: #333;
   color: #fff;
+  font-family: 'Roboto', sans-serif;
   border: 1px solid;
   padding: 0.5rem;
   text-align: center;
@@ -74,6 +76,7 @@
   text-decoration: none;
   margin: 1rem;
   transition: all 0.5s ease-out;
+  border: none;
 }
 
  .Navbar a:hover,
@@ -127,7 +130,6 @@ text-rendering: optimizeLegibility;
 
 .Profile-pic img {
     margin-top: 3rem;
-    cursor: pointer;
     justify-content: center;
     position: relative;
     justify-self: center;
@@ -143,18 +145,21 @@ text-rendering: optimizeLegibility;
     margin-bottom: 0rem;
     text-decoration: none;
     background-color: black;
+    border: none;
 }
 
 .links button {
+    border: none;
     font-size: 60px;
     height: 100px;
     width: 100x;
-    text-decoration: none;
+    text-decoration: black;
     background-color: black;
     transition: width 1s, height 1s, transform 1s;
 }
 
 .links i {
+    border: black;
     text-decoration: none;
     color: white;
     transition: height 1s, transform 1s;
@@ -170,3 +175,35 @@ text-rendering: optimizeLegibility;
   width: 250px;
   height: 250px;
 }
+
+@media only screen and (max-width: 720px) {
+    .header h1 {
+      display: flex;
+      font-size: 50px;
+      justify-content: center;
+      margin-top: 10rem;
+    }
+    
+    .Profile-pic:hover {
+        background-color: black;
+        height: 120px;
+    }
+
+    .content {
+        width: max-content;
+        overflow: hidden;
+        height: 50%;
+    }
+
+    .links button {
+        transition: width 1s, height .5s, transform 1s;
+    }
+    .links i {
+        font-size: 50px;
+        height: 50px;
+    }
+    .links button:hover {
+        background-color: black;
+      height: 110px;
+    }    
+  }
