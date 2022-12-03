@@ -25,7 +25,7 @@
     height: 50px;
     text-decoration: none;
     border: none;
-    color: black;
+    color: grey;
     font-size: 100px;
     cursor: pointer;
     transition: width 1s, height 1s, transform 1s;
@@ -81,8 +81,8 @@
     font-family: 'Patrick Hand', cursive;
     position: relative;
     display: flex;
-   width: 40%;
-   height: 10%;
+    width: 40%;
+    height: 10%;
 }
 
 .one h2 {
@@ -96,6 +96,7 @@
 .one h3 {
     position: absolute;
     display: flex;
+    color: lightblue;;
 }
 .image{
     display: flex;
@@ -125,11 +126,11 @@
 
 .links {
     display: flex;
-    flex-direction: column;
-    justify-content: right;
+    justify-content: left;;
     position: none;
     text-decoration: none;
     background-color: black;
+    margin-left: 20rem;
     border: none;
 
 }
