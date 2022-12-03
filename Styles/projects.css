@@ -3,12 +3,171 @@
 }
 
 .back {
-    width: 300px;
-    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    text-align: left;
+    display: block;
+    align-items: left;
+    justify-content: left;
+    z-index: auto;
+}
+
+
+.back button {
+    background-color: rgb(44, 43, 43);
+    border: none;
 }
 
 .back i {
+    width: 50px;
+    height: 50px;
     text-decoration: none;
+    border: none;
     color: black;
     font-size: 100px;
+    cursor: pointer;
+    transition: width 1s, height 1s, transform 1s;
+}
+
+.back i:hover {
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+.header {
+    position: relative;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    color: white;
+    position: relative;
+    display: block;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    color: white;
+    flex-direction: column;
+}
+
+.one h1 {
+    font-size: 50px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: lime;
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+}
+
+.one h1,h2,h3 {
+    margin-left: 10rem;
+}
+.one h2,h3 {
+    font-family: 'Patrick Hand', cursive;
+    position: relative;
+    display: flex;
+   width: 40%;
+   height: 10%;
+}
+
+.one h2 {
+    display: flex;
+    position: relative;
+    font-size: 25px;
+    z-index: 4;
+    flex-wrap: wrap;
+}
+
+.one h3 {
+    position: absolute;
+    display: flex;
+}
+.image{
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-right: 1rem;
+}
+
+.image img{
+    width: 312px;
+    height: 312px;
+    justify-self: right;
+    align-items: right;
+    display: block;
+    position: relative;
+    margin-right: 5rem;
+    border-radius: 1rem;
+    transition: width 1s, height 1s, transform 1s;
+}
+
+.image img:hover {
+    height: 350px;
+    width: 350px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    position: none;
+    text-decoration: none;
+    background-color: black;
+    border: none;
+
+}
+.links button  {
+    border: none;
+    width: fit-content;
+    display: flex;
+    position: absolute;
+}
+
+.links i {
+    font-size: 50px;
+    color: white;
+    width: fit-content;
+
+}
+
+@media only screen and (max-width: 1520px) {
+
+    .image img {
+        margin-right: 4rem;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .one h1 {
+        width: fit-content;
+        font-size: 40px;
+    }
+    .one h1,h2,h3 {
+        margin-left: 1rem;
+    }
+
+    .one h2 {
+        font-size: 20px;
+    }
+
+    .image img {
+        margin-right: 1rem;
+    }
 }

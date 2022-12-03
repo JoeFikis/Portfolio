@@ -37,7 +37,7 @@
     font-family: 'Poppins', sans-serif;
     z-index: 0;
     font-weight: bolder;
-    color: green;
+    color: lime;
     text-rendering: optimizeLegibility;
 }
 
@@ -176,7 +176,7 @@ text-rendering: optimizeLegibility;
   height: 250px;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1020px) {
     .header h1 {
       display: flex;
       font-size: 50px;
@@ -200,6 +200,71 @@ text-rendering: optimizeLegibility;
     }
     .links i {
         font-size: 50px;
+        height: 50px;
+    }
+    .links button:hover {
+        background-color: black;
+      height: 110px;
+    }    
+  }
+
+
+  @media only screen and (max-width: 720px) {
+    * {
+        white-space: hidden;
+    }
+    .header h1 {
+      display: flex;
+      font-size: 40px;
+      color: lime;;
+      justify-content: center;
+      margin-top: 10rem;
+    }
+
+    .Navbar {
+        display: flex;
+        width: fit-content;
+    }
+
+    .Navbar ul {
+        margin: 1rem;
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    .Navbar a {
+        width: 10px;
+        font-size: 20px;
+    }
+    
+    .Profile-pic:hover {
+        background-color: black;
+        height: 120px;
+    }
+
+    .content {
+        width: max-content;
+        overflow: hidden;
+        height: 50%;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .Navbar ul { 
+        margin-top: 1rem;
+        position: relative;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .links button {
+        transition: width 1s, height .5s, transform 1s;
+    }
+    .links i {
+        font-size: 40px;
         height: 50px;
     }
     .links button:hover {
