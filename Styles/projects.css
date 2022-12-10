@@ -180,6 +180,10 @@
     height: 10%;
 }
 
+.two h3 {
+    color: lightgreen;
+}
+
 .tlinks {
     display: flex;
     justify-content: left;
