@@ -227,8 +227,34 @@ text-rendering: optimizeLegibility;
     }    
   }
 
+  @media only screen and (max-width: 1420px) {
+    .header h1 {
+        display: flex;
+        font-size: 60px;
+        color: lime;;
+        justify-content: center;
+        margin-top: 0rem;
+      }
+  
+      .Navbar {
+          display: flex;
+          width: fit-content;
+      }
+  
+      .Navbar ul {
+          margin: 1rem;
+          position: relative;
+          display: block;
+          width: 100%;
+      }
+  
+      .Navbar a {
+          width: 10px;
+          font-size: 25px;
+      }
+  }
 
-  @media only screen and (max-width: 720px) {
+  @media only screen and (max-width: 1020px) {
     * {
         white-space: hidden;
     }
